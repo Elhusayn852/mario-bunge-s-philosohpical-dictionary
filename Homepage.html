@@ -4,162 +4,201 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mario Bunge's Philosophical Dictionary</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/dist/styles.css" />
+    <script defer src="script.js"></script>
   </head>
   <body>
-    <div class="header">
-      <div class="header__logo">
-        <a href="Homepage.html">
+    <div class="Container">
+      <header>
+        <div class="logo">
+          <img src="/Images/SVG/Logo.svg" alt="" />
+        </div>
+        <div class="search-bar">
           <img
-            class="logo-img"
-            src="/Images/SVG/Bunge's Logo.svg"
-            alt="bunge's dictionary logo"
-          />
-        </a>
-      </div>
-      <div class="header__nav-links">
-        <ul>
-          <li>
-            <a class="header__links" href="#">Dictionary</a>
-          </li>
-          <li>
-            <a class="header__links" href="#">Conventions</a>
-          </li>
-          <li>
-            <a class="header__links" href="#">About the author</a>
-          </li>
-        </ul>
-      </div>
-      <div class="header__search-bar">
-        <input class="search-bar" type="text" placeholder="Search...">
-        <img class="glass-icon" src="/Images/SVG/Search.svg" alt="search icon">
-      </div>
-    </div>
-    <div class="hero-section">
-      <div class="hero-section__heading">
-        <h1>About Mario Bunge</h1>
-        <p class="hero-section__aboutbungepara">
-          Mario Bunge (1919–2020) was a towering figure in contemporary
-          philosophy, renowned for his rigorous defense of scientific realism
-          and his systematic approach to the philosophy of science. An Argentine
-          physicist and philosopher, Bunge authored over 80 books and 500
-          papers, most notably his monumental Treatise on Basic Philosophy, an
-          eight-volume work that covers semantics, ontology, epistemology,
-          ethics, and political philosophy. Passionate about clarity and logic,
-          he championed a worldview grounded in scientific rationality and
-          opposed relativism, mysticism, and pseudoscience. Bunge’s legacy lies
-          in his commitment to unifying science and philosophy, making both more
-          accessible, precise, and impactful in addressing the world’s pressing
-          intellectual and practical challenges.
-        </p>
-        <button class="hero-section__button">Learn more</button>
-      </div>
-      <div class="hero-section__placeholder">
-        <div class="img-crop">
-          <img
-            src="/Images/Mario-Bunge-image.jpg"
-            width="512px"
-            height="320px"
-            alt="image of mario bunge"
-          />
+            width="39px"
+            height="39px"
+            src="/Images/SVG/Search.svg"
+            alt=""
+            class="icon" />
+          <input placeholder="Search for a term, E,g Identity" type="search" />
         </div>
-        <p class="hero-section__aboutimage">
-          BUENOS AIRES, ARGENTINA – SEPTEMBER 24: Philosopher and physicist
-          Mario Bunge poses at the National Library. Though Argentine, he was
-          mainly active in Canada. (Photo by Ricardo Ceppi/Getty Images)
-        </p>
-      </div>
-    </div>
-    <div class="card-section">
-      <!-- 1st card -->
-      <div class="card-section-card">
-        <h3>ACTUALISM</h3>
-        <p class="card-section__para">
-          The ontological view that all possibility is unreal or subjective,
-          hence all dispositions are imaginary, and all possibility statements
-          ...
-        </p>
-        <div class="card-section__More-button">
-          <a class="button-link" href="#">More ...</a>
-        </div>
-      </div>
-
-      <!-- 2nd card -->
-
-      <div class="card-section-card">
-        <h3>FREE WILL</h3>
-        <p class="card-section__para">
-          the ability to make decisions and implement them without or despite
-          coercion, and on the basis of deliberation rather than in automatic
-          ...
-        </p>
-        <div class="card-section__More-button">
-          <a class="button-link" href="#">More ...</a>
-        </div>
-      </div>
-
-      <!-- 3rd card -->
-
-      <div class="card-section-card">
-        <h3>MULTIDISCIPLINARY</h3>
-        <p class="card-section__para">
-          That joins two or more disciplines without coalescing them. For
-          example, the adequate study of science is
-          multidisciplinary—philosophical ...
-        </p>
-        <div class="card-section__More-button">
-          <a class="button-link" href="#">More ...</a>
-        </div>
-      </div>
-
-      <!-- 4th card -->
-
-      <div class="card-section-card">
-        <h3>NATURALISTIC FALLACY</h3>
-        <p class="card-section__para">
-          The reduction of axiological or moral predicates, such as “good,” to
-          natural ones such as “healthy,” “welfare-enhancing,” or “useful ...
-        </p>
-        <div class="card-section__More-button">
-          <a class="button-link" href="#">More ...</a>
-        </div>
-      </div>
-    </div>
-    <div class="quote-section">
-      <div class="quote-section__quote-content">
-        <p class="quote-section__quote-text">
-          “We all would like to know more and, at the same time, to receive less
-          information. In fact, the problem of a worker in today's knowledge
-          industry is not the scarcity of information but its excess. The same
-          holds for professionals: just think of a physician or an executive,
-          constantly bombarded by information that is at best irrelevant. In
-          order to learn anything we need time. And to make time we must use
-          information filters allowing us to ignore most of the information
-          aimed at us. We must ignore much to learn a little.”
-        </p>
-      </div>
-      <div class="quote-section__Author">
-        <span>__</span>
-        <span class="author-name">
-          Mario Augusto Bunge, Philosophy in Crisis: The Need for
-          Reconstruction</span
-        >
-      </div>
-    </div>
-    <div class="call-to-action-section">
-      <div class="call-to-action-container">
-        <div class="call-to-action__text">
-          <h2 class="call-to-action-header">Call to action! it's time!</h2>
-          <p class="callt-to-action-text">
-            Sign up for more daily philosophical terms
-          </p>
+        <nav>
+          <ul>
+            <li class="nav-item">
+              <a href=""><button>Home</button></a>
+            </li>
+            <li class="nav-item">
+              <a href=""><button>Explore Terms</button></a>
+            </li>
+            <li class="nav-item">
+              <a href=""><button>About the Author</button></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="hero-section">
+          <div class="hero-text">
+            <h1>Welcome to Mario Bunge's Philosophical Dictionary</h1>
+            <p>
+              The Philosophical Dictionary by Mario Bunge, now presented as an
+              interactive website, offers a rigorous and accessible guide to
+              modern Western philosophy. Reflecting Bunge’s humanist and
+              scientistic perspective, the site combines clear definitions with
+              critical essays that challenge academic conventions. Designed to
+              be more than a static reference, it enables dynamic exploration
+              through powerful search tools, contextual links, and multimedia
+              features. This digital edition transforms Bunge’s lexicon into a
+              living resource—an evolving space for philosophical inquiry,
+              education, and debate.
+            </p>
+            <div class="hero-btn">
+              <button>Works of Bunge</button>
+              <button>About Mario Bunge</button>
+            </div>
           </div>
-          <div class="call-to-action__call-to-action-button">
-            <button>Sign Up</button>
+          <!-- This is a comment -->
+          <div class="hero-image">
+            <img src="/Images/SVG/hero-img.svg" alt="" />
           </div>
-        </div>
-      </div>
+        </section>
+        <section class="card-section">
+          <div class="card">
+            <h2 class="card-title">Phenomenalism</h2>
+            <h4 class="sub-title">When Appearances Replace Reality</h4>
+            <p class="card-text">
+              Phenomenalism asserts that only phenomena—appearances to
+              consciousness—are real or knowable. Bunge distinguishes between
+              ontological and epistemological forms, both of which he critiques
+              for denying the objective structure of reality. In science and
+              everyday life, we routinely seek what lies beneath appearances,
+              not merely the surface phenomena
+            </p>
+            <button class="read-more">Learn more →</button>
+          </div>
+          <div class="card">
+            <h2 class="card-title">Systemism</h2>
+            <h4 class="sub-title">Everything Is a System—or Part of One</h4>
+            <p class="card-text">
+              Systemism is Bunge’s favored ontological framework, asserting that
+              every entity is either a system or a component of one. This
+              worldview underpins his scientific realism and opposes both
+              individualism and holism. It’s a call to see the world—and our
+              knowledge of it—as structured, interconnected wholes
+            </p>
+            <button class="read-more">Learn more →</button>
+          </div>
+          <div class="card">
+            <h2 class="card-title">Paradigm Shift</h2>
+            <h4 class="sub-title">How Worldviews Radically Change</h4>
+            <p class="card-text">
+              A paradigm shift marks a fundamental change in a field’s
+              background knowledge, hypotheses, and methods. It’s more than a
+              scientific update—it’s a conceptual revolution. Bunge contrasts
+              rational, evidence-based shifts with irrational conversions driven
+              by fashion or ideology
+            </p>
+            <button class="read-more">Learn more →</button>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <section class="subscribe-section">
+          <div class="message">
+            <h2>Stay Thoughtful. Stay Informed.</h2>
+            <p>
+              Join our mailing list to explore the frontiers of clear, rational,
+              and scientifically grounded philosophy. Be the first to know about
+              new entries, curated reading lists, design updates, and special
+              content inspired by Mario Bunge’s Philosophical Dictionary.
+            </p>
+            <ul>
+              <li>✦ Receive monthly insights on key philosophical concepts</li>
+              <li>✦ Get behind-the-scenes updates on the site’s development</li>
+              <li>
+                ✦ Discover how philosophy meets science, ethics, and society
+              </li>
+            </ul>
+          </div>
+          <div class="sing-up">
+            <h3>Subscribe now and keep critical thinking alive.</h3>
+            <input
+              placeholder="Enter Your Name"
+              name
+              id="username"
+              type="text" />
+            <input
+              placeholder="Enter Your Email"
+              id="email"
+              name="email"
+              type="email" />
+            <input type="button" class="sing-up__btn" value="Sing up" />
+          </div>
+        </section>
+        <section class="footer-content-section">
+          <div class="acknowledgment">
+            <h3>Acknowledgment</h3>
+            <p>
+              This website is based on the Philosophical Dictionary by Mario
+              Bunge (Enlarged Edition, 2003). All intellectual content is used
+              with academic respect and in accordance with applicable usage
+              rights.Original publication by Prometheus Books.
+            </p>
+          </div>
+          <div class="citation-Information">
+            <h3>Citation Information</h3>
+            <p>
+              If you use or reference content from this site, please cite
+              as:<span>
+                Bunge, Mario. (2003). Philosophical Dictionary. Amherst, NY:
+                Prometheus Books.
+              </span>
+            </p>
+          </div>
+          <div class="legal-notice">
+            <h3>Legal Notice</h3>
+            <p>
+              © [Year] Philosophical Dictionary Web Edition. All rights
+              reserved. No part of this website may be reproduced or distributed
+              without permission, except for brief quotations used for
+              educational or critical purposes.
+            </p>
+          </div>
+          <div class="quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li>Home</li>
+              <li>Browse Dictionary</li>
+              <li>About This Project</li>
+              <li>Contact</li>
+              <li>Terms of Use</li>
+              <li>Privacy Policy</li>
+            </ul>
+          </div>
+          <div class="connect">
+            <h3>connect</h3>
+            <ul>
+              <li>Email: Elhusayn852@gmail.com</li>
+              <li>
+                Archive Link:
+                <a
+                  target="_blank"
+                  href="https://archive.org/details/philosophicaldic0000bung"
+                  >Internet Archive Original Edition</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="credits">
+            <h4>Developed by: Elhusayn</h4>
+            <h4>Design & Code by: Elhusayn</h4>
+            <h4>
+              Philosophical Consultation: Based on the original work of Mario
+              Bunge
+            </h4>
+          </div>
+        </section>
+      </footer>
     </div>
-    <div class="footer">Copyright © The Odin Project 2021</div>
   </body>
 </html>
